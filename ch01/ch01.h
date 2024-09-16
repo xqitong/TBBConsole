@@ -27,8 +27,34 @@ SPDX-License-Identifier: MIT
 #include <algorithm>
 #include <vector>
 #include <fstream>
-
+#include <filesystem>
+#include <windows.h>  
+#include <libloaderapi.h>
 namespace ch01 {
+    class Helper {
+    public:
+        static std::string GetExePath(){
+            char path[MAX_PATH];
+            if (GetModuleFileNameA(NULL, path, MAX_PATH) != 0) {
+                std::cout << "Executable path: " << path << std::endl;
+            }
+            else {
+                std::cerr << "Failed to get the executable path.\n";
+            }
+            return path;
+        }
+        static std::string GetFolder(const std::string& file_path) {
+            auto index = file_path.find_last_of('\\');
+            // 将std::string转换为fs::path  
+            std::filesystem::path path(file_path);
+
+            // 获取父路径，即文件夹路径  
+            std::filesystem::path folder_path = path.parent_path();
+
+            // 将fs::path转换回std::string  
+            return folder_path.string();
+        }
+};
 
 class Image {
 public:
@@ -56,7 +82,12 @@ public:
       std::cout << "Warning: Image is empty.\n";
       return;
     }
-    std::ofstream stream{fname};
+    std::string exe_path = Helper::GetExePath();
+    std::string exe_folder = Helper::GetFolder(exe_path);
+    exe_folder += "\\";
+    exe_folder += fname;
+    std::cout << exe_folder << std::endl;
+    std::ofstream stream{ exe_folder };
     stream.write((char*)&file.type, file.sizeRest);
     stream.write((char*)&info, info.size);
     stream.write((char*)myData[0].bgra, myData.size()*sizeof(myData[0]));
