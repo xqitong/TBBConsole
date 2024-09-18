@@ -2,9 +2,17 @@
 //
 
 #include "stdafx.h"
+#include "fig_2_03.h"
+#include "fig_2_04.h"
+#include "fig_2_05.h"
+#include "fig_2_06.h"  
+#include "fig_2_07.h"
+#include "fig_2_08.h"
+#include "fig_2_10.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+   std::cout << "可支持的线程数量: " << tbb::this_task_arena::max_concurrency() << std::endl;
+   ch02::fig_2_10::main();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

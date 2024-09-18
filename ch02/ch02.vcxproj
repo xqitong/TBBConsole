@@ -133,6 +133,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="fig_2_03.cpp" />
+    <ClCompile Include="fig_2_04.cpp" />
+    <ClCompile Include="fig_2_05.cpp" />
+    <ClCompile Include="fig_2_06.cpp" />
+    <ClCompile Include="fig_2_07.cpp" />
+    <ClCompile Include="fig_2_08.cpp" />
+    <ClCompile Include="fig_2_10.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -140,6 +147,14 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ch02.h" />
+    <ClInclude Include="fig_2_03.h" />
+    <ClInclude Include="fig_2_04.h" />
+    <ClInclude Include="fig_2_05.h" />
+    <ClInclude Include="fig_2_06.h" />
+    <ClInclude Include="fig_2_07.h" />
+    <ClInclude Include="fig_2_08.h" />
+    <ClInclude Include="fig_2_10.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

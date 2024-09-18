@@ -21,9 +21,54 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="fig_2_03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_04.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_05.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_06.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_07.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_08.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_10.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_04.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ch02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_05.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_06.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_07.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_08.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_10.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
