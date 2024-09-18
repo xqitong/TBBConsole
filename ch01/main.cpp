@@ -5,7 +5,7 @@
 #include "ch01_Api.h"
 int main()
 {
-    ch01::fig_1_07::main();
+    ch01::fig_1_10::main();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
