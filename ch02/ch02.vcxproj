@@ -145,6 +145,19 @@
     <ClCompile Include="fig_2_14.cpp" />
     <ClCompile Include="fig_2_15.cpp" />
     <ClCompile Include="fig_2_16.cpp" />
+    <ClCompile Include="fig_2_17.cpp" />
+    <ClCompile Include="fig_2_18.cpp" />
+    <ClCompile Include="fig_2_19.cpp" />
+    <ClCompile Include="fig_2_20.cpp" />
+    <ClCompile Include="fig_2_22.cpp" />
+    <ClCompile Include="fig_2_23.cpp" />
+    <ClCompile Include="fig_2_24.cpp" />
+    <ClCompile Include="fig_2_27.cpp" />
+    <ClCompile Include="fig_2_28.cpp" />
+    <ClCompile Include="fig_2_30.cpp" />
+    <ClCompile Include="lodepng.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -165,6 +178,17 @@
     <ClInclude Include="fig_2_14.h" />
     <ClInclude Include="fig_2_15.h" />
     <ClInclude Include="fig_2_16.h" />
+    <ClInclude Include="fig_2_17.h" />
+    <ClInclude Include="fig_2_18.h" />
+    <ClInclude Include="fig_2_19.h" />
+    <ClInclude Include="fig_2_20.h" />
+    <ClInclude Include="fig_2_22.h" />
+    <ClInclude Include="fig_2_23.h" />
+    <ClInclude Include="fig_2_24.h" />
+    <ClInclude Include="fig_2_27.h" />
+    <ClInclude Include="fig_2_28.h" />
+    <ClInclude Include="fig_2_30.h" />
+    <ClInclude Include="lodepng.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

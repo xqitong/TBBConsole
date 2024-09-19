@@ -57,6 +57,39 @@
     <ClCompile Include="fig_2_16.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="fig_2_17.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_18.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_19.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_20.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_22.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_23.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_24.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_27.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_28.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_2_30.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -99,6 +132,39 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="fig_2_16.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_17.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_18.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_19.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_20.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_22.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_23.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_24.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_27.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_28.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_2_30.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

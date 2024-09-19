@@ -1,0 +1,105 @@
+#include "stdafx.h"
+#include "fig_2_17.h"
+
+ void ch02::fig_2_17::fig_2_17_run(PrimesList& values) {
+    tbb::parallel_for_each(values,
+        [](PrimesList::reference v) {
+            if (isPrime(v.first))
+                v.second = true;
+        }
+    );
+}
+
+ void ch02::fig_2_17::serialImpl(PrimesList& values) {
+    for (PrimesList::reference v : values) {
+        if (isPrime(v.first))
+            v.second = true;
+    }
+}
+
+ bool ch02::fig_2_17::isPrime(int n) {
+    int e = std::sqrt(n);
+    std::vector<bool> p(e + 1, true);
+
+    for (int i = 2; i <= e; ++i) {
+        if (p[i]) {
+            if (n % i) {
+                for (int j = 2 * i; j <= e; j += i) {
+                    p[j] = false;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+ IntVector ch02::fig_2_17::makePrimesValues(int n, PrimesMap& m) {
+    std::default_random_engine gen;
+    std::uniform_int_distribution<int> dist;
+    IntVector vec;
+
+    for (int i = 0; i < n; ++i) {
+        int v = dist(gen);
+        vec.push_back(v);
+        m[v] = isPrime(v);
+    }
+    return vec;
+}
+
+ PrimesList ch02::fig_2_17::makePrimesList(const IntVector& vec) {
+    PrimesList l;
+    for (auto& v : vec) {
+        l.push_back(PrimesValue(v, false));
+    }
+    return l;
+}
+
+inline void ch02::fig_2_17::warmupTBB() {
+    tbb::parallel_for(0, tbb::this_task_arena::max_concurrency(), [](int) {
+        tbb::tick_count t0 = tbb::tick_count::now();
+        while ((tbb::tick_count::now() - t0).seconds() < 0.01);
+        });
+}
+
+ int ch02::fig_2_17::main() {
+    const int levels = 14;
+    const int N = std::pow(2, levels) - 1;
+    PrimesMap m;
+    auto vec = makePrimesValues(N, m);
+    PrimesList slist = makePrimesList(vec);
+    PrimesList plist = makePrimesList(vec);
+
+    double serial_time = 0.0, parallel_time = 0.0;
+    {
+        tbb::tick_count t0 = tbb::tick_count::now();
+        serialImpl(slist);
+        serial_time = (tbb::tick_count::now() - t0).seconds();
+    }
+    for (auto p : slist) {
+        if (p.second != m[p.first])
+            std::cerr << "Error: serial results are incorrect!" << std::endl;
+    }
+
+    warmupTBB();
+    {
+        tbb::tick_count t0 = tbb::tick_count::now();
+        fig_2_17_run(plist);
+        parallel_time = (tbb::tick_count::now() - t0).seconds();
+    }
+    for (auto p : plist) {
+        if (p.second != m[p.first])
+            std::cerr << "Error: serial results are incorrect!" << std::endl;
+    }
+
+    if (slist != plist) {
+        std::cerr << "Error: serial and parallel implementations do not agree!" << std::endl;
+    }
+
+    std::cout << "serial_time == " << serial_time << " seconds" << std::endl
+        << "parallel_time == " << parallel_time << " seconds" << std::endl
+        << "speedup == " << serial_time / parallel_time << std::endl;
+    return 0;
+}

@@ -14,8 +14,18 @@
 #include "fig_2_14.h"
 #include "fig_2_15.h"
 #include "fig_2_16.h"
+#include "fig_2_17.h"
+#include "fig_2_18.h"
+#include "fig_2_19.h"
+#include "fig_2_20.h"
+#include "fig_2_22.h"
+#include "fig_2_23.h" 
+#include "fig_2_24.h" 
+#include "fig_2_28.h" 
+#include "fig_2_30.h" 
 int main()
 {
    std::cout << "可支持的线程数量: " << tbb::this_task_arena::max_concurrency() << std::endl;
-   ch02::fig_2_16::main();
+   ch02::fig_2_28::main();
+   ch02::fig_2_30::main();
 }

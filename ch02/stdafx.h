@@ -11,7 +11,11 @@
 #include <limits>
 #include <random>
 #include <iomanip>  
-#include <tbb/tbb.h>
+#include <list>
+#include <map>
+#include <utility>
+#include <vector>
 
+#include <tbb/tbb.h>
 #include "ch02.h"
 using namespace ch02;
