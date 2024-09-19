@@ -13,8 +13,14 @@ PNGImage::PNGImage(const PNGImage& p) : frameNumber{ p.frameNumber },
 width{ p.width }, height{ p.height },
 buffer{ p.buffer } {}
  void PNGImage::write() const {
+     std::string exe_path = Helper::GetExePath();
+     std::string exe_folder = Helper::GetFolder(exe_path);
+     exe_folder += "\\";
+
     std::string file_name = std::string("out") + std::to_string(frameNumber) + ".png";
-    if (lodepng::encode(file_name, *buffer, width, height)) {
+    exe_folder += file_name;
+    std::cout << exe_folder << std::endl;
+    if (lodepng::encode(exe_folder, *buffer, width, height)) {
         std::cerr << "Error: could not write PNG file!" << std::endl;
     }
 }

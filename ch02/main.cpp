@@ -26,6 +26,6 @@
 int main()
 {
    std::cout << "可支持的线程数量: " << tbb::this_task_arena::max_concurrency() << std::endl;
-   ch02::fig_2_28::main();
+   //ch02::fig_2_28::main();
    ch02::fig_2_30::main();
 }
