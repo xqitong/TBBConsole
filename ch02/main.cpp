@@ -22,7 +22,8 @@
 #include "fig_2_23.h" 
 #include "fig_2_24.h" 
 #include "fig_2_28.h" 
-#include "fig_2_30.h" 
+#include "fig_2_30.h"
+
 int main()
 {
    std::cout << "可支持的线程数量: " << tbb::this_task_arena::max_concurrency() << std::endl;
