@@ -8,6 +8,15 @@
 #include <fstream>
 #include <memory>
 #include <string>
-#include <iomanip>
+#include <limits>
+#include <random>
+#include <iomanip>  
+#include <list>
+#include <map>
+#include <utility>
+#include <vector>
+
 #include <tbb/tbb.h>
+#include "ch03.h"
+using namespace ch03;
 

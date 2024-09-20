@@ -5,10 +5,11 @@
 #include "fig_3_03.h"
 #include "fig_3_05.h"
 #include "fig_3_06.h"
+#include "fig_3_10.h"
 int main()
 {
     std::cout << "可支持的线程数量: " << tbb::this_task_arena::max_concurrency() << std::endl;
-    ch03::fig_3_06::main();
+    ch03::fig_3_10::main();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

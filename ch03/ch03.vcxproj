@@ -133,9 +133,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ch03.cpp" />
     <ClCompile Include="fig_3_03.cpp" />
     <ClCompile Include="fig_3_05.cpp" />
     <ClCompile Include="fig_3_06.cpp" />
+    <ClCompile Include="fig_3_10.cpp" />
+    <ClCompile Include="lodepng.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -143,9 +149,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ch03.h" />
     <ClInclude Include="fig_3_03.h" />
     <ClInclude Include="fig_3_05.h" />
     <ClInclude Include="fig_3_06.h" />
+    <ClInclude Include="fig_3_10.h" />
+    <ClInclude Include="lodepng.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

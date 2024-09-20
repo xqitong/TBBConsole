@@ -30,6 +30,15 @@
     <ClCompile Include="fig_3_06.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fig_3_10.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -42,6 +51,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="fig_3_06.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fig_3_10.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ch03.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
