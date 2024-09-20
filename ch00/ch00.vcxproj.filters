@@ -21,13 +21,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="fig_3_03.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="fig_3_05.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="fig_3_06.cpp">
+    <ClCompile Include="TObject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +29,7 @@
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="fig_3_03.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="fig_3_05.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="fig_3_06.h">
+    <ClInclude Include="TObject.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
